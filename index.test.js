@@ -1,8 +1,8 @@
 const getMethod = require("./index.js");
 
 describe('getMethod', () => {
-  
-    it('will return the method', () => {
+
+    it('will return the method (GET)', () => {
         
         const req = 
         `GET / HTTP/1.1
@@ -16,7 +16,7 @@ describe('getMethod', () => {
         expect(reqMethod).toEqual(expectation);
     });
 
-    it('will return the method', () => {
+    it('will return the method (DELETE)', () => {
         
         const req = 
         `DELETE / HTTP/1.1
